@@ -18,3 +18,9 @@ if teacher=="Mr Horan":
     print("You are lucky, he is a great teacher") 
 else:
     print(teacher,"is an ok teacher")
+
+
+i = 1
+while i < 6:
+    print(i)
+    i += 1

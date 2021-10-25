@@ -10,3 +10,4 @@ if username == y:
     print("You are lucky, he is a great teacher.")
 else:
     print(username + " is an ok teacher")
+
