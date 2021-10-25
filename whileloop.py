@@ -8,12 +8,14 @@ print(" ------------------------------------------------")
 y = input("What is the name of this subject ")
 i = "Not Correct - try again"
 a = "IST"
-while y != a:
-    continue
+while y < 3:
     print(i)
     y = input("What is the name of this subject ")
-    if y == "IST":
+    if y == a:
         break
-    print('')
-    print('')
+    print("")
+    print("")
     print("Congratulations!!")
+
+
+    
