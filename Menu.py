@@ -19,37 +19,32 @@ def main_menu():
     print("x. To Exit")
     y = input("Enter an option ")
 
-    if y == "1":
-        HelloWorld()
-    elif y == "2":
-        GoodbyeWorld()
-    elif y == "3":
-        GoodbyePerson()
-    elif y == "4":
-        GoodTeacher()
-    elif y == "5":
-        forLoop
-    elif y == "6":
-        whileLoop()
-    elif y == "7":
-        invalid()
-    elif y == "8":
-        invalid()
-    elif y == "9":
-        invalid()
-    elif y == "x":
-        print("")
-        print("----Start of Output ---------------------------")
-        print("")
-        print("")
-        print("----End of Output -----------------------------")
-        print("")
-        print("")
-        print("")
-        input("Press Enter to continue")
-        exit 
-    else:
-        invalid()
+    while y != "x":
+        if y == "1":
+            HelloWorld()
+        elif y == "2":
+            GoodbyeWorld()
+        elif y == "3":
+            GoodbyePerson()
+        elif y == "4":
+            GoodTeacher()
+        elif y == "5":
+            forLoop
+        elif y == "6":
+            whileLoop()
+        else:
+            invalid()
+        break
+    print("")
+    print("----Start of Output ---------------------------")
+    print("")
+    print("")
+    print("----End of Output -----------------------------")
+    print("")
+    print("")
+    print("")
+    input("Press Enter to continue")
+    exit()
 
 def HelloWorld():
     print("")
@@ -155,6 +150,5 @@ def invalid():
     print("")
     input("Press Enter to continue")
     main_menu()
-
 
 main_menu()
