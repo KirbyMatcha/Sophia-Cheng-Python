@@ -1,10 +1,11 @@
-import os
+from os import system, name
 
-def clearConsole():
-    command = 'clear'
-    if os.name in ('nt', 'dos'):  # If Machine is running on Windows, use cls
-        command = 'cls'
-    os.system(command)
+def screen_clear():
+   if name == 'nt':
+      _ = system('cls')
+   # for mac and linux(here, os.name is 'posix')
+   else:
+      _ = system('clear')
 
 
 def main_menu():
@@ -31,7 +32,7 @@ def main_menu():
     while y != "x":
         if y == "1":
             HelloWorld()
-            clearConsole()
+            screen_clear()
         elif y == "2":
             GoodbyeWorld()
         elif y == "3":
@@ -160,4 +161,4 @@ def invalid():
     input("Press Enter to continue")
     main_menu()
 
-main_menu()
+print(main_menu())
