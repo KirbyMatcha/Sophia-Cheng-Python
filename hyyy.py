@@ -1,11 +1,6 @@
-from os import system, name
-
-def screen_clear():
-   if name == 'nt':
-      _ = system('cls')
-   # for mac and linux(here, os.name is 'posix')
-   else:
-      _ = system('clear')
+import os
+def clearConsole(): 
+    os.system('cls' if os.name == 'nt' else 'clear')
 
 
 def main_menu():
@@ -32,19 +27,32 @@ def main_menu():
     while y != "x":
         if y == "1":
             HelloWorld()
-            screen_clear()
+            clearConsole()
+            main_menu()
         elif y == "2":
             GoodbyeWorld()
+            clearConsole()
+            main_menu()
         elif y == "3":
             GoodbyePerson()
+            clearConsole()
+            main_menu()
         elif y == "4":
             GoodTeacher()
+            clearConsole()
+            main_menu()
         elif y == "5":
             forLoop
+            clearConsole()
+            main_menu()
         elif y == "6":
             whileLoop()
+            clearConsole()
+            main_menu()
         else:
             invalid()
+            clearConsole()
+            main_menu()
         break
     print("")
     print("----Start of Output ---------------------------")
@@ -82,7 +90,6 @@ def GoodbyeWorld():
     print("")
     print("")
     input("Press Enter to continue")
-    main_menu()
 
 def GoodbyePerson():
     print("")
@@ -97,7 +104,6 @@ def GoodbyePerson():
     print("")
     print("")
     input("Press Enter to continue")
-    main_menu()
 
 def GoodTeacher():
     print("")
@@ -115,7 +121,6 @@ def GoodTeacher():
     print("")
     print("")
     input("Press Enter to continue")
-    main_menu() 
 
 def forLoop():
     print("")
@@ -129,7 +134,6 @@ def forLoop():
     print("")
     print("")
     input("Press Enter to continue")
-    main_menu()
 
 def whileLoop():
     print("")
@@ -147,6 +151,12 @@ def whileLoop():
         print("Congratulations!!")
         print("")
         print("")
+        print("")
+        print("----End of Output -----------------------------")
+        print("")
+        print("")
+        print("")
+        input("Press Enter to continue")
 
 def invalid():
     print("")
@@ -159,6 +169,6 @@ def invalid():
     print("")
     print("")
     input("Press Enter to continue")
-    main_menu()
 
-print(main_menu())
+clearConsole()
+main_menu()

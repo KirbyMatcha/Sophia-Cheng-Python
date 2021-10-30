@@ -1,7 +1,11 @@
 import os
-clearConsole = lambda:os.system('cls')
 
- 
+def clearConsole():
+    command = 'clear'
+    if os.name in ('nt', 'dos'):  # If Machine is running on Windows, use cls
+        command = 'cls'
+    os.system(command)
+
 
 def main_menu():
     print(" ------------------------------------------------")
@@ -28,31 +32,18 @@ def main_menu():
         if y == "1":
             HelloWorld()
             clearConsole()
-            main_menu()
         elif y == "2":
             GoodbyeWorld()
-            clearConsole()
-            main_menu()            
         elif y == "3":
             GoodbyePerson()
-            clearConsole()
-            main_menu()
         elif y == "4":
             GoodTeacher()
-            clearConsole()
-            main_menu()
         elif y == "5":
-            forLoop()
-            clearConsole()
-            main_menu()
+            forLoop
         elif y == "6":
             whileLoop()
-            clearConsole()
-            main_menu()
         else:
             invalid()
-            clearConsole()
-            main_menu()
         break
     print("")
     print("----Start of Output ---------------------------")
@@ -90,6 +81,7 @@ def GoodbyeWorld():
     print("")
     print("")
     input("Press Enter to continue")
+    main_menu()
 
 def GoodbyePerson():
     print("")
@@ -104,6 +96,7 @@ def GoodbyePerson():
     print("")
     print("")
     input("Press Enter to continue")
+    main_menu()
 
 def GoodTeacher():
     print("")
@@ -121,6 +114,7 @@ def GoodTeacher():
     print("")
     print("")
     input("Press Enter to continue")
+    main_menu() 
 
 def forLoop():
     print("")
@@ -134,6 +128,7 @@ def forLoop():
     print("")
     print("")
     input("Press Enter to continue")
+    main_menu()
 
 def whileLoop():
     print("")
@@ -151,12 +146,6 @@ def whileLoop():
         print("Congratulations!!")
         print("")
         print("")
-        print("")
-        print("----End of Output -----------------------------")
-        print("")
-        print("")
-        print("")
-        input("Press Enter to continue")
 
 def invalid():
     print("")
@@ -169,6 +158,6 @@ def invalid():
     print("")
     print("")
     input("Press Enter to continue")
+    main_menu()
 
-clearConsole()
 main_menu()
