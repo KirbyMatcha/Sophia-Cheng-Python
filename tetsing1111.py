@@ -1,6 +1,11 @@
+import os
+clearConsole = lambda:os.system('cls')
+
+b = "7", "8", "9"
+a = "1", "2", "3", "4", "5", "6"
+c = a, b
+
 def main_menu():
-    import os
-    clearConsole = lambda:os.system('cls')
     clearConsole()
     print(" ------------------------------------------------")
     print("|                                                |")
@@ -21,70 +26,108 @@ def main_menu():
     print("9. Encode a string")
     print("x. To Exit")
     y = input("Enter an option ")
-    print("")
-    print("----Start of Output ---------------------------")
-    print("")
-    b = "7", "8", "9"
     while y != "x":
         if y == "1":
             HelloWorld()
-            clearConsole()
-            main_menu()
+            return main_menu()
         elif y == "2":
             GoodbyeWorld()
-            clearConsole()
-            main_menu()            
+            return main_menu()          
         elif y == "3":
             GoodbyePerson()
-            clearConsole()
-            main_menu()
+            return main_menu()
         elif y == "4":
             GoodTeacher()
-            clearConsole()
-            main_menu()
+            return main_menu()
         elif y == "5":
             forLoop()
-            clearConsole()
-            main_menu()
+            return main_menu()
         elif y == "6":
             whileLoop()
-            clearConsole()
-            main_menu()
+            return main_menu()
         elif y == b:
             invalid()
-            clearConsole()
-            main_menu()
+            return main_menu()
         else:
             exit()
+
+    
         
 
 def HelloWorld():
+    print("")
+    print("----Start of Output ---------------------------")
+    print("")
     print("Hello World")
-           
+    print("")
+    print("----End of Output -----------------------------")
+    print("")
+    print("")
+    print("")
+    input("Press Enter to continue")       
 
 def GoodbyeWorld():
+    print("")
+    print("----Start of Output ---------------------------")
+    print("")
     print("Hello World")
     input("------> Program paused - press enter to continue")
     print("Goodbye World")
+    print("")
+    print("----End of Output -----------------------------")
+    print("")
+    print("")
+    print("")
+    input("Press Enter to continue")
 
 def GoodbyePerson():
+    print("")
+    print("----Start of Output ---------------------------")
+    print("")
     print("Hello World")
     username = input("What is your name ? ")
     print("Goodbye " + username)
+    print("")
+    print("----End of Output -----------------------------")
+    print("")
+    print("")
+    print("")
+    input("Press Enter to continue")
 
 def GoodTeacher():
+    print("")
+    print("----Start of Output ---------------------------")
+    print("")
     username = input("Teacher's name (try Mr Horan) ")
-    g = "Mr Horan"
-    if username == g:
+    y = "Mr Horan"
+    if username == y:
         print("You are lucky, he is a great teacher.")
     else:
         print(username + " is an ok teacher")
+    print("")
+    print("----End of Output -----------------------------")
+    print("")
+    print("")
+    print("")
+    input("Press Enter to continue")
 
 def forLoop():
+    print("")
+    print("----Start of Output ---------------------------")
+    print("")
     for x in range(1, 500):
         print(x)
+    print("")
+    print("----End of Output -----------------------------")
+    print("")
+    print("")
+    print("")
+    input("Press Enter to continue")
 
 def whileLoop():
+    print("")
+    print("----Start of Output ---------------------------")
+    print("")
     y = input("What is the name of this subject ")
     i = "Not Correct - try again"
     a = "IST"
@@ -98,9 +141,23 @@ def whileLoop():
         print("")
         print("")
         print("")
+        print("----End of Output -----------------------------")
+        print("")
+        print("")
+        print("")
+        input("Press Enter to continue")
 
 def invalid():
+    print("")
+    print("----Start of Output ---------------------------")
+    print("")
     print("invalid option")
+    print("")
+    print("----End of Output -----------------------------")
+    print("")
+    print("")
+    print("")
+    input("Press Enter to continue")
 
 def exit():
     print(" ")
