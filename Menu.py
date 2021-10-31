@@ -1,5 +1,5 @@
 import os
-clearConsole = lambda:os.system('cls')
+os.system('cls')
 
  
 
@@ -27,31 +27,31 @@ def main_menu():
     while y != "x":
         if y == "1":
             HelloWorld()
-            clearConsole()
+            os.system('cls')
             main_menu()
         elif y == "2":
             GoodbyeWorld()
-            clearConsole()
+            os.system('cls')
             main_menu()            
         elif y == "3":
             GoodbyePerson()
-            clearConsole()
+            os.system('cls')
             main_menu()
         elif y == "4":
             GoodTeacher()
-            clearConsole()
+            os.system('cls')
             main_menu()
         elif y == "5":
             forLoop()
-            clearConsole()
+            os.system('cls')
             main_menu()
         elif y == "6":
             whileLoop()
-            clearConsole()
+            os.system('cls')
             main_menu()
         else:
             invalid()
-            clearConsole()
+            os.system('cls')
             main_menu()
         break
     print("")
@@ -170,5 +170,5 @@ def invalid():
     print("")
     input("Press Enter to continue")
 
-clearConsole()
+os.system('cls')
 main_menu()
