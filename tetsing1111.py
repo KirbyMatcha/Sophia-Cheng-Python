@@ -1,11 +1,12 @@
-import os
-clearConsole = lambda:os.system('cls')
+
 
 b = "7", "8", "9"
 a = "1", "2", "3", "4", "5", "6"
 c = a, b
 
 def main_menu():
+    import os
+    clearConsole = lambda : os.system("cls")
     clearConsole()
     print(" ------------------------------------------------")
     print("|                                                |")
@@ -29,25 +30,25 @@ def main_menu():
     while y != "x":
         if y == "1":
             HelloWorld()
-            return main_menu()
+            main_menu()
         elif y == "2":
             GoodbyeWorld()
-            return main_menu()          
+            main_menu()          
         elif y == "3":
             GoodbyePerson()
-            return main_menu()
+            main_menu()
         elif y == "4":
             GoodTeacher()
-            return main_menu()
+            main_menu()
         elif y == "5":
             forLoop()
-            return main_menu()
+            main_menu()
         elif y == "6":
             whileLoop()
-            return main_menu()
+            main_menu()
         elif y == b:
             invalid()
-            return main_menu()
+            main_menu()
         else:
             exit()
 
