@@ -44,7 +44,7 @@ def main_menu():
         elif y == "5":
             forLoop()
             clearConsole()
-            return main_menu()
+            main_menu()
         elif y == "6":
             whileLoop()
             clearConsole()
