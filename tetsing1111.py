@@ -6,7 +6,13 @@ c = a, b
 
 def main_menu():
     import os
-    clearConsole = lambda : os.system("cls")
+
+    def clearConsole():
+        command = 'clear'
+        if os.name in ('nt', 'dos'):  # If Machine is running on Windows, use cls
+            command = 'cls'
+        os.system(command)
+
     clearConsole()
     print(" ------------------------------------------------")
     print("|                                                |")
@@ -46,11 +52,19 @@ def main_menu():
         elif y == "6":
             whileLoop()
             main_menu()
-        elif y == b:
+        else:
             invalid()
             main_menu()
-        else:
-            exit()
+    print("")
+    print("----Start of Output ---------------------------")
+    print("")
+    print(" ")
+    print("----End of Output -----------------------------")
+    print(" ")
+    print(" ")
+    print(" ")
+    input("Press Enter to continue ")
+    quit()
 
     
         
@@ -160,13 +174,6 @@ def invalid():
     print("")
     input("Press Enter to continue")
 
-def exit():
-    print(" ")
-    print("----End of Output -----------------------------")
-    print(" ")
-    print(" ")
-    print(" ")
-    input("Press Enter to continue ")
-    quit()
+    
 
 main_menu()
