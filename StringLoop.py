@@ -7,5 +7,3 @@ print("|                                                |")
 print(" ------------------------------------------------")
 
 y = input("What is your string? ")
-for x in y:
-  print(x) 

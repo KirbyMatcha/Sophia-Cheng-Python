@@ -44,7 +44,7 @@ def main_menu():
         elif y == "5":
             forLoop()
             clearConsole()
-            return main_menu()
+            main_menu()
         elif y == "6":
             whileLoop()
             clearConsole()
@@ -164,6 +164,20 @@ def invalid():
     print("----Start of Output ---------------------------")
     print("")
     print("invalid option")
+    print("")
+    print("----End of Output -----------------------------")
+    print("")
+    print("")
+    print("")
+    input("Press Enter to continue")
+
+def stringLoop():
+    print("")
+    print("----Start of Output ---------------------------")
+    print("")
+    y = input("What is your string? ")
+    for x in y:
+        print(x) 
     print("")
     print("----End of Output -----------------------------")
     print("")
