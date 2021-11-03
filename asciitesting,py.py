@@ -39,7 +39,7 @@ for character in text:
 print(ascii_values)
 
 text = input("What is your string? ")
-y = [ord(character) for character in text]
+y = ord(character) for character in text
 for x in text:
     print (x + " = " + y ) 
 
