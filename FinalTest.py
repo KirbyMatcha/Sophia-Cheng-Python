@@ -23,7 +23,9 @@ def main_menu():
     print("9. Encode a string")
     print("x. To Exit")
     y = input("Enter an option ")
-
+    print("")
+    print("----Start of Output ---------------------------")
+    print("")
     while y != "x":
         if y == "1":
             HelloWorld()
@@ -64,12 +66,10 @@ def main_menu():
     print("")
     print("")
     input("Press Enter to continue")
+    print("")
     quit()
 
 def HelloWorld():
-    print("")
-    print("----Start of Output ---------------------------")
-    print("")
     print("Hello World")
     print("")
     print("----End of Output -----------------------------")
@@ -79,9 +79,6 @@ def HelloWorld():
     input("Press Enter to continue")       
 
 def GoodbyeWorld():
-    print("")
-    print("----Start of Output ---------------------------")
-    print("")
     print("Hello World")
     input("------> Program paused - press enter to continue")
     print("Goodbye World")
@@ -93,9 +90,6 @@ def GoodbyeWorld():
     input("Press Enter to continue")
 
 def GoodbyePerson():
-    print("")
-    print("----Start of Output ---------------------------")
-    print("")
     print("Hello World")
     username = input("What is your name ? ")
     print("Goodbye " + username)
@@ -107,9 +101,6 @@ def GoodbyePerson():
     input("Press Enter to continue")
 
 def GoodTeacher():
-    print("")
-    print("----Start of Output ---------------------------")
-    print("")
     username = input("Teacher's name (try Mr Horan) ")
     y = "Mr Horan"
     if username == y:
@@ -124,9 +115,6 @@ def GoodTeacher():
     input("Press Enter to continue")
 
 def forLoop():
-    print("")
-    print("----Start of Output ---------------------------")
-    print("")
     for x in range(1, 500):
         print(x)
     print("")
@@ -137,9 +125,6 @@ def forLoop():
     input("Press Enter to continue")
 
 def whileLoop():
-    print("")
-    print("----Start of Output ---------------------------")
-    print("")
     y = input("What is the name of this subject ")
     i = "Not Correct - try again"
     a = "IST"
@@ -160,9 +145,6 @@ def whileLoop():
         input("Press Enter to continue")
 
 def invalid():
-    print("")
-    print("----Start of Output ---------------------------")
-    print("")
     print("invalid option")
     print("")
     print("----End of Output -----------------------------")
@@ -172,9 +154,6 @@ def invalid():
     input("Press Enter to continue")
 
 def stringLoop():
-    print("")
-    print("----Start of Output ---------------------------")
-    print("")
     y = input("What is your string? ")
     for x in y:
         print(x) 
