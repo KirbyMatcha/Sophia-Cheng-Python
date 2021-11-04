@@ -1,9 +1,8 @@
 import os
 clearConsole = lambda : os.system("cls")
 
- 
-
 def main_menu():
+    clearConsole()
     print(" ------------------------------------------------")
     print("|                                                |")
     print("|    07Menu                                      |")
@@ -29,39 +28,30 @@ def main_menu():
     while y != "x":
         if y == "1":
             HelloWorld()
-            clearConsole()
             main_menu()
         elif y == "2":
             GoodbyeWorld()
-            clearConsole()
             main_menu()            
         elif y == "3":
             GoodbyePerson()
-            clearConsole()
             main_menu()
         elif y == "4":
             GoodTeacher()
-            clearConsole()
             main_menu()
         elif y == "5":
             forLoop()
-            clearConsole()
             main_menu()
         elif y == "6":
             whileLoop()
-            clearConsole()
             main_menu()
         elif y == "7":
             stringLoop()
-            clearConsole()
             main_menu()
         elif y == "8":
             Convert()
-            clearConsole()
             main_menu()
         else:
             invalid()
-            clearConsole()
             main_menu()
     print("")
     print("----Start of Output ---------------------------")
@@ -183,5 +173,4 @@ def Convert():
     print("")
     input("Press Enter to continue")
 
-clearConsole()
 main_menu()
