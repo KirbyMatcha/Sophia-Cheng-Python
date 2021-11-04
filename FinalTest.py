@@ -5,7 +5,7 @@ def main_menu():
     clearConsole()
     print(" ------------------------------------------------")
     print("|                                                |")
-    print("|    07Menu                                      |")
+    print("|    99FinalTest                                 |")
     print("|    Name : Sophia                               |")
     print("|    Version : 01                                |")
     print("|                                                |")
@@ -50,7 +50,7 @@ def main_menu():
         elif y == "8":
             Convert()
             main_menu()
-        elif y == "8":
+        elif y == "9":
             Encoded()
             main_menu()
         else:
