@@ -50,6 +50,9 @@ def main_menu():
         elif y == "8":
             Convert()
             main_menu()
+        elif y == "8":
+            Encoded()
+            main_menu()
         else:
             invalid()
             main_menu()
@@ -166,6 +169,19 @@ def Convert():
         a =(ord(x))
         answer = x + " = {}"
         print(answer.format(a))
+    print("")
+    print("----End of Output -----------------------------")
+    print("")
+    print("")
+    print("")
+    input("Press Enter to continue")
+
+def Encoded():
+    y = input("What is your string? ")
+    for x in y:
+        a = chr(ord(x) + 1)
+        print(x + "=" + a)
+        print(a)
     print("")
     print("----End of Output -----------------------------")
     print("")
