@@ -1,6 +1,6 @@
 print(" ------------------------------------------------")
 print("|                                                |")
-print("|    09EncordAString                             |")
+print("|    09EncodeAString                             |")
 print("|    Name : Sophia                               |")
 print("|    Version : 01                                |")
 print("|                                                |")
