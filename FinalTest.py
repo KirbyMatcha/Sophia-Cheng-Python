@@ -178,10 +178,12 @@ def Convert():
 
 def Encoded():
     y = input("What is your string? ")
+    b = ""
     for x in y:
         a = chr(ord(x) + 1)
         print(x + "=" + a)
-        print(a)
+        b += a
+        print(b)
     print("")
     print("----End of Output -----------------------------")
     print("")
