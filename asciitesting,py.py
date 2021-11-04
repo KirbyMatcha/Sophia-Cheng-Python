@@ -50,3 +50,30 @@ for x in range(text):
 text = input("What is your string? ")
 for x in text:
     print(x + " = " + (ord(x)))
+
+
+
+def to_ascii(text):
+    ascii_values = [ord(character) for character in text]
+    return ascii_values
+text = input("Enter a string: ")
+print(to_ascii(text))
+
+y = input("What is your string? ")
+for x in y:
+    print(x)
+
+
+y = input("What is your string? ")
+a = [ord(character) for character in y]
+for x in y:
+    answer = x + " = {}"
+    print(answer.format(a))
+
+
+
+y = input("What is your string? ")
+
+a = [ord(character) for character in y]
+for x in y:
+    print(x)
