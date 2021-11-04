@@ -1,19 +1,14 @@
 print(" ------------------------------------------------")
 print("|                                                |")
-print("|    09convertToASCII                            |")
+print("|    09EncordAString                             |")
 print("|    Name : Sophia                               |")
 print("|    Version : 01                                |")
 print("|                                                |")
 print(" ------------------------------------------------")
 y = input("What is your string? ")
 for x in y:
-    a =(ord(x))
-    answer = x + " = {}"
-    print(answer.format(a))
-
-
-
-    
-
-
-
+    a = chr(ord(x) + 1)
+    print(x + "=" + a)
+    b = ()
+    b += x
+    print(b)
