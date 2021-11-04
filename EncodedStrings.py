@@ -9,6 +9,4 @@ y = input("What is your string? ")
 for x in y:
     a = chr(ord(x) + 1)
     print(x + "=" + a)
-    b = ()
-    b += x
-    print(b)
+    print(a)
